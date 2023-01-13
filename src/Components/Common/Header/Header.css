@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --maxWidth:1400px; /* inner container max width */
+}
+
+header{
+    min-height: 2vh;
+}
+
+#header-inner-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+#title-container>h4::after{
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: black;
+    transition: width 1s ease-in-out;
+}
+
+#title-container>h4:hover::after{
+    width: 100%;
+}
+
+
+@media screen and (min-width:768px){
+    #header-inner-container{
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: var(--maxWidth);
+        margin: 0 auto;
+    }
+}

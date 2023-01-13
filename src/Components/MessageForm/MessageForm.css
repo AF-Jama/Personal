@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.input-group>textarea{
+    resize: none;
+}
+
+.input-group{
+    display: block;
+    width: auto;
+    margin: 1rem;
+}
+
+#sender-name{
+    width: 100%;
+    padding: 1rem 0 1rem 0;
+}
+
+#message-text-area{
+    width: 100%;
+    height: 200px;
+}
+
+#submit-btn{
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 5px;
+    border: 2px solid black;
+    color: white;
+    background-color: black;
+}

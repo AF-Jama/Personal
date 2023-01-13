@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --maxWidth:1400px;
+}
+
+#nav-link-container{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+
+#nav-bar-outer-container{
+    display: block;
+    width: 100%;
+    /* border: 2px solid red; */
+    text-align: center;
+    color: black;
+    margin: 1.5rem 0;
+}
+
+#burger-btn-container{
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+
+.nav-link{
+    display: block;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: black;
+    transition: color 1s ease-in-out;
+}
+
+.nav-link:hover{
+    color: rgb(102, 97, 97);
+}
+
+
+@media screen and (min-width:768px){
+    #burger-btn-container{
+        display: none;
+    }
+
+    #nav-link-container{
+        max-width: 500px;
+        overflow: visible;
+    }
+
+    .nav-link{
+        display: inline-block;
+        margin-left: 1rem;
+    }
+
+    .nav-link::after{
+        content: '';
+        display: block;
+        width: 0; /* sets initial width of pseudo element 0 */
+        height: 1px;
+        background-color: black;
+        transition: width 1s ease-in-out; /* width transition set when width changes from one state to another  */
+    }
+
+    .nav-link:hover::after{
+        width: 100%;
+    }
+
+    #nav-bar-outer-container{
+        margin: 0;
+        width: auto;
+    }
+}
