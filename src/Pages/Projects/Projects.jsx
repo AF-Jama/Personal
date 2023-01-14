@@ -9,6 +9,7 @@ import project04 from '../../assets/project04.jpeg';
 import project05 from '../../assets/project05.png'; 
 import project06 from '../../assets/project06.jpeg'; 
 import Header from "../../Components/Common/Header";
+import Footer from "../../Components/Common/Footer";
 import './Projects.css';
 
 
@@ -167,7 +168,7 @@ const Projects = (props)=>{
                             <div className="description-and-icon-container">
                                 <h4>Password Manager</h4>
                                 <div id="text">
-                                    <p>Currently working on a password Manager allowing users to store their passwords encrypted. Based of lastpass zero knowledge system</p>
+                                    <p>Currently working on a password Manager allowing users to store their passwords encrypted. Users passwords are encrypted and decrypted via their master password Based of lastpass zero knowledge system</p>
                                 </div>
 
                                 <h4 id="technologies-header" style={{color:"black",marginBottom:"1rem"}}>Technologies</h4>
@@ -190,6 +191,8 @@ const Projects = (props)=>{
                     </div>
                 </div>
             </div>
+
+            <Footer/>
 
         </div>
     )

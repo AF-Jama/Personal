@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLightbulb,faFile,faDownload } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import Header from "../../Components/Common/Header";
+import Footer from "../../Components/Common/Footer";
 import image from '../../assets/me.jpg'
 import Resume from '../../assets/RESUME.pdf';
 import ActionButton from "../../Components/ActionButton";
@@ -41,14 +42,12 @@ const Home = (props)=>{
                             </div>
                         </div>
 
-                        <div id="introduction-image-container">
-                            <img src={image} alt="Image of me" />
-                        </div>    
+                            <div id="introduction-image-container">
+                                <img src={image} alt="Image of me" />
+                            </div>    
                     </div>    
                 </div>       
 
-
-            </div>
                 <div id="project-container">
                     <div id="inner-project-container">
                         <h4>Projects</h4>
@@ -67,12 +66,9 @@ const Home = (props)=>{
 
 
                     </div>
+
                 </div>
-                {/* <div id="resume-container">
-                    <div id="inner-resume-container">
-                        <iframe src="../../assets/RESUME.pdf" frameborder="0"></iframe>
-                    </div>
-                </div> */}
+
                 <div id="contact-container">
                     <div className="contact-card">
                         <div id="contact-form-text">
@@ -83,6 +79,9 @@ const Home = (props)=>{
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <Footer/>
         </div>
     )
 }
