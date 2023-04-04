@@ -1,6 +1,7 @@
 import React,{useState,useEffect,useContext,useRef} from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars,faXmark,faBarsStaggered } from "@fortawesome/free-solid-svg-icons";
+import Resume from '../../../assets/RESUME.pdf'
 import './NavBar.css';
 
 
@@ -26,16 +27,15 @@ const NavBar = (props)=>{
 
 
     return(
-        <nav id="nav-bar-outer-container">
+        <nav id="nav-bar-outer-container" className={props.visibility?"expand":"hide"}>
             <div id="nav-link-container" ref={navLinkContainerRef}>
                 <a href="/" className="nav-link">Home</a>
                 <a href="/project" className="nav-link">Projects</a>
-                <a href="../../../assets/Resume.pdf" download='resume.pdf' className='nav-link'>Resume</a>
-                {/* <a href="#" className="nav-link">Contact</a> */}
+                <a href={Resume} download='resume.pdf' className='nav-link' target='_blank'>Resume</a>
             </div>
 
-            <div id="burger-btn-container">
-                {visibility?<FontAwesomeIcon  id="burgerExitIcon" size="2x" height="40px" width="40px" icon={faXmark} onClick={onClick}/>:<FontAwesomeIcon id="burgerExitIcon" size="2x" height="40px" width="40px" icon={faBarsStaggered} onClick={onClick} beat/>}
+            <div id="button-container">
+                <button>Github</button>
             </div>
 
 

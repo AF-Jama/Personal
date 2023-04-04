@@ -4,8 +4,9 @@ import './Header.css';
 
 
 const Header = (props)=>{
+    const [visibility,setVisibility] = useState(false);
 
-
+    console.log(visibility);
 
     return (
         <header id="header-outer-container">
@@ -14,7 +15,13 @@ const Header = (props)=>{
                     <h4>Abdifatah Jama</h4>
                 </div>
 
-                <NavBar/>
+                <NavBar visibility={visibility}/>
+
+                <div id="b-btn-container" className={visibility?"change":"ontainer"} onClick={()=>setVisibility(!visibility)}>
+                    <div className="bar1"></div>
+                    <div className="bar2"></div>
+                    <div className="bar3"></div>
+                </div>
 
             </div>
         </header>
