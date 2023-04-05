@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-:root{
+/* :root{
     --defaultBackgroundColor:#73849b;
     --maxWidth:1500px;
 }
@@ -20,10 +20,10 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-}
+} */
 
 
-#inner-container-wrapper{
+/* #inner-container-wrapper{
     width: 90%;
     max-width: var(--maxWidth);
     margin: 0 auto;
@@ -31,13 +31,13 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
+} */
 
 #technologies-container{
     /* background-color: #0074D9; */
 }
 
-#text-heading{
+/* #text-heading{
     color: black;
 }
 
@@ -61,31 +61,31 @@
 #project-card-container{
     flex: 1;
     background-color: #001f3f;
-}   
+}    */
 
 #inner-proj-container{
     /* border: 2px solid black; */
-    width: 90%;
-    margin: 0 auto;
+    /* width: 90%;
+    margin: 0 auto; */
 }
 
-#text>p{
+/* #text>p{
     font-size: 1.2rem;
-}
+} */
 
 .card{
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     width: 90%;
     max-width: 350px;
     padding: 1rem 0 0 0;
-    margin: 0 auto;
+    margin: 0 auto; */
     /* border: 0; */
-    transition: border 1s linear;
-    max-height: fit-content;
+    /* transition: border 1s linear;
+    max-height: fit-content; */
 }
 
-.card:hover{
+/* .card:hover{
     border: 2px solid black;
 }
 
@@ -104,14 +104,14 @@
 .description-and-icon-container>#text{
     width: 95%;
     margin: 0 auto;
-}
+} */
 
 .action-containers{
-    width: 100%;
+    /* width: 100%; */
     /* border: 2px solid green; */
 }
 
-#git-icon{
+/* #git-icon{
     margin-right: 1rem;
 }
 
@@ -130,17 +130,17 @@ a{
 
 #technologies-header:hover::after{
     width: 100%;
-}
+} */
 
 
 .card>img{
-    max-width: 100%;
+    /* max-width: 100%;
     height: 15vw;
-    object-fit: contain;
+    object-fit: contain; */
     /* object-position: center; */
 }
 
-.card:hover{
+/* .card:hover{
     animation:shake 1.5s ease-in-out
 }
 
@@ -171,12 +171,12 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-}
+} */
 
 
 @media screen and (min-width:600px){
 
-    #technologies-container{
+    /* #technologies-container{
         margin: 2rem 0 0 0;
     }
 
@@ -201,5 +201,5 @@ a{
         flex-direction: row;
         flex-wrap: wrap;
         align-items: stretch;
-    }
+    } */
 }

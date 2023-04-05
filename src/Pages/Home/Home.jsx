@@ -20,12 +20,25 @@ import Resume from '../../assets/RESUME.pdf';
 import ActionButton from "../../Components/ActionButton";
 import SkillCard from "../../Components/SkillCard";
 import MessageForm from "../../Components/MessageForm";
+import ProjectCard from "../../Components/ProjectCard";
 import projectFile from '../../projects.json';
+import project01 from '../../assets/project01.png'; 
+import project02 from '../../assets/project02.jpeg'; 
+import project03 from '../../assets/project03.jpeg'; 
+import project04 from '../../assets/project04.jpeg'; 
+import project05 from '../../assets/project05.png'; 
+import project06 from '../../assets/lock.svg'; 
+import project07 from '../../assets/youtubeIcon.svg';
+import project08 from '../../assets/weatherIcon.svg';
+import project09 from '../../assets/world.svg';
+import project10 from '../../assets/wire.svg';
+import openLink from '../../assets/open-link.svg';
+import githubLink from '../../assets/github-link.svg';
 import './Home.css';
 
 
 const Home = (props)=>{
-    console.log(projectFile);
+    console.log(projectFile)
 
 
 
@@ -108,6 +121,87 @@ const Home = (props)=>{
 
                         <div id="project-cards-container">
                             
+                            <ProjectCard
+                                projectImage={project02} 
+                                header = "Discord Music Bot"
+                                 description="Discord Music Bot, with multiple commands to add,remove and play songs in a queue."
+                                 liveLink="#"
+                                 githubLink="https://github.com/AF-Jama/news_and_voice_discord_bot" 
+                            />
+
+                            <ProjectCard
+                                projectImage={project01} 
+                                header = "Covid19 Data Application"
+                                 description="Covid 19 web application which displays UK covid data"
+                                 liveLink="#"
+                                 githubLink="https://github.com/AF-Jama/news_and_voice_discord_bot"
+                            />
+
+                            <ProjectCard
+                                projectImage={project03} 
+                                header = "C BlackJack"
+                                 description="BlackJack Game written in C."
+                                 liveLink="#"
+                                 githubLink="https://github.com/AF-Jama/news_and_voice_discord_bot"
+                            />
+
+                            <ProjectCard
+                                projectImage={project04} 
+                                header = "Spotify Stat Tracker"
+                                 description="Web Application which exposess Spotify API to display user stats"
+                                 liveLink="#"
+                                 githubLink="https://github.com/AF-Jama/news_and_voice_discord_bot"
+                            />
+
+                            <ProjectCard
+                                projectImage={project05} 
+                                header = "Graphical PI estimation"
+                                 description="Estimated PI using monte carlo method."
+                                 liveLink="#"
+                                 githubLink="https://github.com/AF-Jama/news_and_voice_discord_bot"
+                            />
+
+                            <ProjectCard
+                                projectImage={project06} 
+                                header = "Password Manager"
+                                 description="Password Manager application allowing users to login/create an account and store encrypted versions of their passwords"
+                                 liveLink="#"
+                                 githubLink="https://github.com/AF-Jama/news_and_voice_discord_bot"
+                            />
+
+                            <ProjectCard
+                                projectImage={project07} 
+                                header = "Youtube Downloader"
+                                 description="Youtube audio and video downloader"
+                                 liveLink="#"
+                                 githubLink="https://github.com/AF-Jama/news_and_voice_discord_bot"
+                            />
+
+                            <ProjectCard
+                                projectImage={project08} 
+                                header = "Weather Tracker Application"
+                                 description="Weather Tracker Application using the Open Weather API."
+                                 liveLink="#"
+                                 githubLink="https://github.com/AF-Jama/news_and_voice_discord_bot"
+                            />
+
+                            <ProjectCard
+                                projectImage={project09} 
+                                header = "Country Data Application"
+                                 description="Country Data application which simply displays country data and allows user to search for a specific country."
+                                 liveLink="#"
+                                 githubLink="https://github.com/AF-Jama/news_and_voice_discord_bot"
+                            />
+
+                            <ProjectCard
+                                projectImage={project10} 
+                                header = "C packet sniffer"
+                                 description="C Packet sniffer using TCP-Dump package. Not completed"
+                                 liveLink="#"
+                                 githubLink="https://github.com/AF-Jama/news_and_voice_discord_bot"
+                            />
+
+
                         </div>
                     </div>
 
