@@ -32,6 +32,7 @@ import project07 from '../../assets/youtubeIcon.svg';
 import project08 from '../../assets/weatherIcon.svg';
 import project09 from '../../assets/world.svg';
 import project10 from '../../assets/wire.svg';
+import arrowUpSvg from '../../assets/up-arrow.svg';
 import openLink from '../../assets/open-link.svg';
 import githubLink from '../../assets/github-link.svg';
 import './Home.css';
@@ -70,7 +71,7 @@ const Home = (props)=>{
                                         <p id="age" className="about-item">22 Years Old</p>
                                         <p id="nationality" className="about-item">British Citizen</p>
                                     </div>
-                                </div>
+                            </div>
 
                                 <div id="action-btn-container">
                                     <div id="action-btn1" className="action-btn">
@@ -79,6 +80,10 @@ const Home = (props)=>{
 
                                     <div id="action-btn2" className="action-btn">
                                         <button onClick={()=>document.getElementById('contact-container').scrollIntoView()}>Contact Me</button>
+                                    </div>
+
+                                    <div id="action-btn3" className="action-btn">
+                                        <button onClick={()=>document.getElementById("project-container").scrollIntoView()}>Projects</button>
                                     </div>
                                 </div>
                         </div>
@@ -214,6 +219,7 @@ const Home = (props)=>{
                     </div>
                     
                 </div>
+                <a href="#" className="up-arrow" onClick={()=>document.getElementById('').scrollIntoView()}><img src={arrowUpSvg} alt="" /></a>
             </main>
 
             {/* <Footer/> */}

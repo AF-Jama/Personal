@@ -29,6 +29,8 @@ html {
     flex: 1;
     display: flex;
     flex-direction: column;
+    padding: 0 0 1rem 0;
+    position: relative;
 }
 
 #main-inner-container{
@@ -350,6 +352,12 @@ html {
     left: 30px;
 }
 
+.up-arrow{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 
 @media screen and (min-width:768px){
     #introduction-wrapper{
@@ -383,6 +391,14 @@ html {
 
     #action-btn2>button{
         width: auto;
+        padding: 1rem 2.5rem;
+    }
+
+    #action-btn3{
+        margin: 0 2rem;
+    }
+
+    #action-btn3>button{
         padding: 1rem 2.5rem;
     }
 
@@ -420,7 +436,7 @@ html {
 
     .skills-column{
         width: 50%;
-        border: 2px solid red;
+        /* border: 2px solid red; */
     }
 
 }

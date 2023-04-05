@@ -30,7 +30,7 @@ const NavBar = (props)=>{
         <nav id="nav-bar-outer-container" className={props.visibility?"expand":"hide"}>
             <div id="nav-link-container" ref={navLinkContainerRef}>
                 <a href="/" className="nav-link">Home</a>
-                <a href="/project" className="nav-link">Projects</a>
+                {/* <a href="/project" className="nav-link">Projects</a> */}
                 <a href={Resume} download='resume.pdf' className='nav-link' target='_blank'>Resume</a>
             </div>
 
