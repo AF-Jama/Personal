@@ -32,6 +32,7 @@ import project07 from '../../assets/youtubeIcon.svg';
 import project08 from '../../assets/weatherIcon.svg';
 import project09 from '../../assets/world.svg';
 import project10 from '../../assets/wire.svg';
+import virus from '../../assets/virus.svg';
 import arrowUpSvg from '../../assets/up-arrow.svg';
 import openLink from '../../assets/open-link.svg';
 import githubLink from '../../assets/github-link.svg';
@@ -135,11 +136,11 @@ const Home = (props)=>{
                             />
 
                             <ProjectCard
-                                projectImage={project01} 
+                                projectImage={virus} 
                                 header = "Covid19 Data Application"
                                  description="Covid 19 web application which displays UK covid data"
-                                 liveLink="#"
-                                 githubLink="https://github.com/AF-Jama/news_and_voice_discord_bot"
+                                 liveLink="https://covid-app-chi-wine.vercel.app/"
+                                 githubLink="https://github.com/AF-Jama/Covid19TrackerApp"
                             />
 
                             <ProjectCard
@@ -147,15 +148,15 @@ const Home = (props)=>{
                                 header = "C BlackJack"
                                  description="BlackJack Game written in C."
                                  liveLink="#"
-                                 githubLink="https://github.com/AF-Jama/news_and_voice_discord_bot"
+                                 githubLink="https://github.com/AF-Jama/BlackJack"
                             />
 
                             <ProjectCard
                                 projectImage={project04} 
                                 header = "Spotify Stat Tracker"
                                  description="Web Application which exposess Spotify API to display user stats"
-                                 liveLink="#"
-                                 githubLink="https://github.com/AF-Jama/news_and_voice_discord_bot"
+                                 liveLink="https://spotify-app-seven-orpin.vercel.app/"
+                                 githubLink="https://github.com/AF-Jama/SpotifyApp"
                             />
 
                             <ProjectCard
@@ -163,39 +164,39 @@ const Home = (props)=>{
                                 header = "Graphical PI estimation"
                                  description="Estimated PI using monte carlo method."
                                  liveLink="#"
-                                 githubLink="https://github.com/AF-Jama/news_and_voice_discord_bot"
+                                 githubLink="https://github.com/AF-Jama/monte-carlo"
                             />
 
                             <ProjectCard
                                 projectImage={project06} 
                                 header = "Password Manager"
                                  description="Password Manager application allowing users to login/create an account and store encrypted versions of their passwords"
-                                 liveLink="#"
-                                 githubLink="https://github.com/AF-Jama/news_and_voice_discord_bot"
+                                 liveLink="http://passwordmanagerbucket.s3-website-us-east-1.amazonaws.com/"
+                                 githubLink="https://github.com/AF-Jama/PasswordManagerApp"
                             />
 
                             <ProjectCard
                                 projectImage={project07} 
                                 header = "Youtube Downloader"
                                  description="Youtube audio and video downloader"
-                                 liveLink="#"
-                                 githubLink="https://github.com/AF-Jama/news_and_voice_discord_bot"
+                                 liveLink="http://youtubedownloader01.s3-website-us-east-1.amazonaws.com/"
+                                 githubLink="https://github.com/AF-Jama/YoutubeDownloader"
                             />
 
                             <ProjectCard
                                 projectImage={project08} 
                                 header = "Weather Tracker Application"
                                  description="Weather Tracker Application using the Open Weather API."
-                                 liveLink="#"
-                                 githubLink="https://github.com/AF-Jama/news_and_voice_discord_bot"
+                                 liveLink="https://weatherapp-six-ruddy.vercel.app/"
+                                 githubLink="https://github.com/AF-Jama/WeatherApp"
                             />
 
                             <ProjectCard
                                 projectImage={project09} 
                                 header = "Country Data Application"
                                  description="Country Data application which simply displays country data and allows user to search for a specific country."
-                                 liveLink="#"
-                                 githubLink="https://github.com/AF-Jama/news_and_voice_discord_bot"
+                                 liveLink="https://countries-pearl-omega.vercel.app/"
+                                 githubLink="https://github.com/AF-Jama/CountryApp"
                             />
 
                             <ProjectCard
@@ -203,7 +204,7 @@ const Home = (props)=>{
                                 header = "C packet sniffer"
                                  description="C Packet sniffer using TCP-Dump package. Not completed"
                                  liveLink="#"
-                                 githubLink="https://github.com/AF-Jama/news_and_voice_discord_bot"
+                                 githubLink="https://github.com/AF-Jama/PCAP-Packet-Sniffer"
                             />
 
 

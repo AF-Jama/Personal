@@ -17,13 +17,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 10;
 }
 
 .hide{
     display: none;
 }
 
-nav>#button-container>button{
+nav>#button-container>a>button{
     padding: 1rem 2.5rem;
     display: block;
     width: 100%;
@@ -86,7 +87,7 @@ nav>#button-container>button{
         width: auto;
     }
 
-    nav>#button-container>button{
+    nav>#button-container>a>button{
         padding: 0.5rem 2rem;
     }
 }

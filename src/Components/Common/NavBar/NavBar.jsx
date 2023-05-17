@@ -35,7 +35,7 @@ const NavBar = (props)=>{
             </div>
 
             <div id="button-container">
-                <button>Github</button>
+                <a href="https://github.com/AF-Jama" target="_blank"><button>Github</button></a>
             </div>
 
 

@@ -20,7 +20,6 @@ header{
     justify-content: space-between;
     align-items: center;
     /* margin: 0 0.5rem 0 0.5rem; */
-    z-index: 10;
     margin: 0 auto;
 }
 
@@ -35,6 +34,10 @@ header{
 
 #title-container>h4:hover::after{
     width: 100%
+}
+
+#b-btn-container{
+    z-index: 200;
 }
 
 #title-container>h4{
@@ -59,7 +62,7 @@ header{
 }
 
 .change{
-    background-color: white;
+    /* background-color: white; */
 }
 
 .change .bar1 {
