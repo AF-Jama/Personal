@@ -19,7 +19,7 @@ const MessageForm = (props)=>{
             </div>
 
             <div className="input-group">
-                <textarea id="message-text-area" name="message" {...register('message',{})}></textarea>
+                <textarea id="message-text-area" name="message" placeholder="Enter your message here." {...register('message',{})}></textarea>
             </div>
 
             <button id="submit-btn" className="btn btn-primary" type="submit" value="Submit">Submit</button>

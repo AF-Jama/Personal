@@ -13,6 +13,8 @@ import graphqlLogo from '../../assets/graphql.svg';
 import redisLogo from '../../assets/redis.svg';
 import CLogo from '../../assets/C.svg';
 import tailwindLogo from '../../assets/tailwindcss.svg';
+import typescriptLogo from '../../assets/typescript.svg';
+import flutterLogo from '../../assets/flutter.svg';
 import Header from "../../Components/Common/Header";
 import Footer from "../../Components/Common/Footer";
 import image from '../../assets/me.jpg'
@@ -32,6 +34,9 @@ import project07 from '../../assets/youtubeIcon.svg';
 import project08 from '../../assets/weatherIcon.svg';
 import project09 from '../../assets/world.svg';
 import project10 from '../../assets/wire.svg';
+import project11 from '../../assets/live-chat.svg';
+import project12 from '../../assets/ecommerceLogo.svg';
+import project13 from '../../assets/uber-car.png';
 import virus from '../../assets/virus.svg';
 import arrowUpSvg from '../../assets/up-arrow.svg';
 import openLink from '../../assets/open-link.svg';
@@ -80,11 +85,11 @@ const Home = (props)=>{
                                     </div>
 
                                     <div id="action-btn2" className="action-btn">
-                                        <button onClick={()=>document.getElementById('contact-container').scrollIntoView()}>Contact Me</button>
+                                        <button onClick={()=>document.getElementById('contact-container').scrollIntoView()} style={{color:"#000"}}>Contact</button>
                                     </div>
 
                                     <div id="action-btn3" className="action-btn">
-                                        <button onClick={()=>document.getElementById("project-container").scrollIntoView()}>Projects</button>
+                                        <button onClick={()=>document.getElementById("project-container").scrollIntoView()} style={{color:"#000"}}>Projects</button>
                                     </div>
                                 </div>
                         </div>
@@ -105,6 +110,9 @@ const Home = (props)=>{
                                 <SkillCard image={mysqlLogo} skillName="MySQL"/>
                                 <SkillCard image={pyLogo} skillName="Python"/>
                                 <SkillCard image={CLogo} skillName="C"/>
+                                <SkillCard image={tailwindLogo} skillName="Tailwind"/>
+                                <SkillCard image={typescriptLogo} skillName="Typescript"/>
+                                <SkillCard image={redisLogo} skillName="Redis"/>
                             </div>
                         </div>
 
@@ -114,9 +122,8 @@ const Home = (props)=>{
                             <h1>Future Technologies I will Learn</h1>
 
                             <div id="future-technologies-container">
+                                <SkillCard image={flutterLogo} skillName="Flutter"/>
                                 <SkillCard image={graphqlLogo} skillName="GraphQL"/>
-                                <SkillCard image={redisLogo} skillName="Redis"/>
-                                <SkillCard image={tailwindLogo} skillName="Tailwind"/>
                             </div>
 
                         </div>
@@ -154,8 +161,8 @@ const Home = (props)=>{
                             <ProjectCard
                                 projectImage={project04} 
                                 header = "Spotify Stat Tracker"
-                                 description="Web Application which exposess Spotify API to display user stats"
-                                 liveLink="https://spotify-app-seven-orpin.vercel.app/"
+                                 description="Web Application which exposes Spotify API to display user stats"
+                                 liveLink="https://spotify-stats-iota.vercel.app/"
                                  githubLink="https://github.com/AF-Jama/SpotifyApp"
                             />
 
@@ -205,6 +212,30 @@ const Home = (props)=>{
                                  description="C Packet sniffer using TCP-Dump package. Not completed"
                                  liveLink="#"
                                  githubLink="https://github.com/AF-Jama/PCAP-Packet-Sniffer"
+                            />
+
+                            <ProjectCard
+                                projectImage={project11} 
+                                header = "Real time chat application"
+                                 description="Real time chat application allowing users to communicate in real/live time."
+                                 liveLink="https://chat-room-lilac.vercel.app"
+                                 githubLink="https://github.com/AF-Jama/chatroom"
+                            />
+
+                            <ProjectCard
+                                projectImage={project12} 
+                                header = "Ecommerce application"
+                                 description="Ecommerce application allowing users to create an account and add products to their basket"
+                                 liveLink="https://ecommerce-sable-five.vercel.app"
+                                 githubLink="https://github.com/AF-Jama/ecommerce"
+                            />
+
+                            <ProjectCard
+                                projectImage={project13} 
+                                header = "Uber Clone"
+                                 description="Uber Clone allowing users to request a ride"
+                                 liveLink="https://uber-clone-virid.vercel.app"
+                                 githubLink="https://github.com/AF-Jama/UberClone"
                             />
 
 

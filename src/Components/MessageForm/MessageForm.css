@@ -16,6 +16,9 @@
 
 #sender-name{
     width: 100%;
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
 }
 
 #message-text-area{
