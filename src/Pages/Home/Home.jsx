@@ -37,6 +37,8 @@ import project10 from '../../assets/wire.svg';
 import project11 from '../../assets/live-chat.svg';
 import project12 from '../../assets/ecommerceLogo.svg';
 import project13 from '../../assets/uber-car.png';
+import project14 from '../../assets/bank.svg';
+import project15 from '../../assets/topic-room.png';
 import virus from '../../assets/virus.svg';
 import arrowUpSvg from '../../assets/up-arrow.svg';
 import openLink from '../../assets/open-link.svg';
@@ -58,15 +60,41 @@ const Home = (props)=>{
             <main id="main-content-container">
                 <div id="main-inner-container">
                     <div id="introduction-wrapper">
-                        <div id="introduction-header-container" className="intro-column">
-                            <img id="me-img" src={image} alt="" />
+                        {/* <div id="introduction-header-container" className="intro-column">
 
                             <h1>Abdifatah <span id="surname-word">Jama</span></h1>
                             <h6 style={{textAlign:"center",color:"grey"}}>Junior Software Engineer </h6>
+                        </div> */}
+                        {/* <div id="me-image-container">
+                        </div> */}
+                        <img id="me-img" src={image} alt="" />
+
+                        <div>
+                            <p id="about-me-text">I am ChemEng Graduate <br /> and looking for <span>junior software engineering roles</span></p>
+
+                            {/* <div id="about-list-container">
+                                <p id="place" className="about-item">London, UK</p>
+                                <p id="age" className="about-item">22 Years Old</p>
+                                <p id="nationality" className="about-item">British Citizen</p>
+                            </div> */}
+
+                            <div id="action-btn-container">
+                                    <div id="action-btn1" className="action-btn">
+                                        <a href="https://www.github.com/AF-Jama" target="_blank"><img id="github-logo-action" src={githubLogo} alt=""/></a>
+                                    </div>
+
+                                    <div id="action-btn2" className="action-btn">
+                                        <button onClick={()=>document.getElementById('contact-container').scrollIntoView()} style={{color:"#000"}}>Contact</button>
+                                    </div>
+
+                                    <div id="action-btn3" className="action-btn">
+                                        <button onClick={()=>document.getElementById("project-container").scrollIntoView()} style={{color:"#000"}}>Projects</button>
+                                    </div>
+                            </div>
                         </div>
 
 
-                        <div id="introduction-info" className="intro-column">
+                        {/* <div id="introduction-info" className="intro-column">
                             <div id="about-me-container">
                                     <h3 style={{color:"grey",margin:"1rem 0"}}>About Me</h3>
 
@@ -92,7 +120,7 @@ const Home = (props)=>{
                                         <button onClick={()=>document.getElementById("project-container").scrollIntoView()} style={{color:"#000"}}>Projects</button>
                                     </div>
                                 </div>
-                        </div>
+                        </div> */}
 
                         {/* <div className="intro-column">1</div> */}
 
@@ -133,6 +161,14 @@ const Home = (props)=>{
                         <h1>My Projects</h1>
 
                         <div id="project-cards-container">
+
+                        <ProjectCard
+                                projectImage={project15} 
+                                header = "Topic Chat Room"
+                                 description="Chat room allowing users to talk about different topics in realtime chat"
+                                 liveLink="https://topic-room.vercel.app"
+                                 githubLink="https://github.com/AF-Jama/topics-room" 
+                        />
                             
                             <ProjectCard
                                 projectImage={project02} 
@@ -178,8 +214,16 @@ const Home = (props)=>{
                                 projectImage={project06} 
                                 header = "Password Manager"
                                  description="Password Manager application allowing users to login/create an account and store encrypted versions of their passwords"
-                                 liveLink="http://passwordmanagerbucket.s3-website-us-east-1.amazonaws.com/"
+                                 liveLink="http://passwordmanagerbucket01.s3-website-us-east-1.amazonaws.com/"
                                  githubLink="https://github.com/AF-Jama/PasswordManagerApp"
+                            />
+
+                            <ProjectCard
+                                projectImage={project14} 
+                                header = "Financial Tracker"
+                                description="Financial tracker application allowing users to login/create an account and manage finances ie: deposting,transfering between accounts and withdrawing"
+                                liveLink="http://financialtracker01.s3-website-us-east-1.amazonaws.com/"
+                                githubLink="https://github.com/AF-Jama/FinancialTracker"
                             />
 
                             <ProjectCard

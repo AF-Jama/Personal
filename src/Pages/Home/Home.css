@@ -14,7 +14,7 @@ html {
 
 :root{
     --defaultBackgroundColor:#17171B;
-    --maxMainInnerWidth:2500px; 
+    --maxMainInnerWidth:1600px; 
     --maxCardWidth:600px;
 }
 
@@ -43,11 +43,12 @@ html {
 }
 
 #introduction-wrapper{
-    flex: 1;
+    /* flex: 1; */
     /* border: 2px solid red; */
     min-height: calc(100vh - 50px);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     /* height: 100%;
     min-height: calc(100vh - 6vh); */
 }
@@ -62,9 +63,9 @@ html {
 }
 
 #me-img{
-    max-width: 100%;
-    width: 150px;
-    height: 150px;
+    /* max-width: 100%; */
+    width: 250px;
+    height: 250px;
     object-fit: cover;
     border-radius: 50%;
     display: block;
@@ -113,6 +114,11 @@ html {
 #about-me-text{
     font-size: 1.4rem;
     font-family: Roboto;
+    text-align: center;
+}
+
+#about-me-text>span{
+    color: red;
 }
 
 #action-btn-container{
@@ -363,12 +369,14 @@ html {
     #introduction-wrapper{
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
         align-items: center;
     }
 
     #me-img{
         width: 300px;
         height: 300px;
+        margin: 0 1rem 0 0;
     }
 
     #introduction-header-container{
@@ -381,7 +389,8 @@ html {
         align-items: center;
         justify-content: center;
         width: auto;
-        margin: 5rem 0 0 0;
+        /* margin: 5rem 0 0 0; */
+        margin: 1rem 0 0 0;
         /* border: 2px solid red; */
     }
 

@@ -6,6 +6,8 @@ import { Routes,Route } from 'react-router'
 import reactLogo from './assets/react.svg'
 // import './App.css'
 
+console.log = function() {};
+
 function App() {
   const [count, setCount] = useState(0)
 
