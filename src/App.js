@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from './Components/Common/Header'
 import Home from './Pages/Home';
+import Custom from './Pages/Custom';
 import Project from './Pages/Projects';
 import { Routes,Route } from 'react-router'
 import reactLogo from './assets/react.svg'
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
       <Routes>
         <Route path='/' element={<Home/>}/>
+        <Route path='/home' element={<Custom/>}/>
       </Routes>
     </div>
   )

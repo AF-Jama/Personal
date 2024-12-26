@@ -23,3 +23,10 @@ yarn-debug.log*
 yarn-error.log*
 
 .vercel
+
+# Custom Page
+/src/Pages/Custom
+
+# assets
+/src/assets/joker.jpg
+/src/assets/thats-life.mp3

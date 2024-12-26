@@ -15,6 +15,7 @@ import CLogo from '../../assets/C.svg';
 import tailwindLogo from '../../assets/tailwindcss.svg';
 import typescriptLogo from '../../assets/typescript.svg';
 import flutterLogo from '../../assets/flutter.svg';
+import linuxLogo from '../../assets/linux.svg';
 import Header from "../../Components/Common/Header";
 import Footer from "../../Components/Common/Footer";
 import image from '../../assets/me.jpg'
@@ -141,6 +142,7 @@ const Home = (props)=>{
                                 <SkillCard image={tailwindLogo} skillName="Tailwind"/>
                                 <SkillCard image={typescriptLogo} skillName="Typescript"/>
                                 <SkillCard image={redisLogo} skillName="Redis"/>
+                                <SkillCard image={linuxLogo} skillName="Linux"/>
                             </div>
                         </div>
 
