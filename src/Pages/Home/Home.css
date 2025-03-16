@@ -411,6 +411,10 @@ html {
         padding: 1rem 2.5rem;
     }
 
+    #action-btn1>a>img{
+        margin: 0;
+    }
+
     #about-list-container{
         display: flex;
         flex-direction: row;

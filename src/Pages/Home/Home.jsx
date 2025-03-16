@@ -68,10 +68,10 @@ const Home = (props)=>{
                         </div> */}
                         {/* <div id="me-image-container">
                         </div> */}
-                        <img id="me-img" src={image} alt="" />
+                        {/* <img id="me-img" src={image} alt="" /> */}
 
                         <div>
-                            <p id="about-me-text">I am ChemEng Graduate <br /> and looking for <span>junior software engineering roles</span></p>
+                            <p id="about-me-text">I am a Chemical Engineering Graduate <br /> and looking for <span>work</span></p>
 
                             {/* <div id="about-list-container">
                                 <p id="place" className="about-item">London, UK</p>
