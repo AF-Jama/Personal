@@ -290,30 +290,31 @@ html {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;  
-    justify-content: center;
+    /* justify-content: center; */
     gap: 15px;  
 }
 
-#project-container>h1{
+.home-project-header{
     font-size: 1.4rem;
     color: #fff;
     text-align: center;
+    margin: 0 0 0.5rem 0;
 }
 
 .project-card{
     /* height: 350px; */
     /* width: 95%;
     max-width: 400px;  */
-    flex-basis: 350px;
+    /* flex-basis: 350px;
     border: 1px solid black;
-    outline: 0;
+    outline: 0; */
     /* margin: 1.5rem auto; */
-    border-radius: 12px;
+    /* border-radius: 12px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative;
+    position: relative; */
 }
 
-.project-inner-container{
+/* .project-inner-container{
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -329,11 +330,11 @@ html {
 
 .project-inner-container>img{
     max-width: 100%;
-}
+} */
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
 
-.project-header{
+/* .project-header{
     font-size: 1.4rem;
     color: #fff;
     text-align: center;
@@ -362,7 +363,7 @@ html {
     position: absolute;
     bottom: 0;
     right: 0;
-}
+} */
 
 
 @media screen and (min-width:768px){
@@ -431,6 +432,7 @@ html {
         grid-template-columns: repeat(3,1fr);
         padding: 0;
         margin: 0;
+        padding: 0.5rem;
     }
 
     #future-technologies-container{
@@ -450,6 +452,10 @@ html {
     .skills-column{
         width: 50%;
         /* border: 2px solid red; */
+    }
+
+    #future-skills-column{
+        /* padding: 1rem; */
     }
 
 }

@@ -16,6 +16,8 @@ import tailwindLogo from '../../assets/tailwindcss.svg';
 import typescriptLogo from '../../assets/typescript.svg';
 import flutterLogo from '../../assets/flutter.svg';
 import linuxLogo from '../../assets/linux.svg';
+import dockerLogo from '../../assets/docker.svg';
+import mongodbLogo from '../../assets/mongodb.svg';
 import Header from "../../Components/Common/Header";
 import Footer from "../../Components/Common/Footer";
 import image from '../../assets/me.jpg'
@@ -143,6 +145,9 @@ const Home = (props)=>{
                                 <SkillCard image={typescriptLogo} skillName="Typescript"/>
                                 <SkillCard image={redisLogo} skillName="Redis"/>
                                 <SkillCard image={linuxLogo} skillName="Linux"/>
+                                <SkillCard image={flutterLogo} skillName="Flutter"/>
+                                <SkillCard image={dockerLogo} skillName=""/>
+                                <SkillCard image={mongodbLogo} skillName=""/>
                             </div>
                         </div>
 
@@ -152,7 +157,6 @@ const Home = (props)=>{
                             <h1>Future Technologies I will Learn</h1>
 
                             <div id="future-technologies-container">
-                                <SkillCard image={flutterLogo} skillName="Flutter"/>
                                 <SkillCard image={graphqlLogo} skillName="GraphQL"/>
                             </div>
 
@@ -160,57 +164,65 @@ const Home = (props)=>{
                     </div>
 
                     <div id="project-container">
-                        <h1>My Projects</h1>
+                        <h1 className="home-project-header">My Projects</h1>
 
                         <div id="project-cards-container">
 
-                        <ProjectCard
-                                projectImage={project15} 
-                                header = "Topic Chat Room"
-                                 description="Chat room allowing users to talk about different topics in realtime chat"
-                                 liveLink="https://topic-room.vercel.app"
-                                 githubLink="https://github.com/AF-Jama/topics-room" 
-                        />
-                            
                             <ProjectCard
+                                    projectImage={project15} 
+                                    header = "Topic Chat Room"
+                                    description="Chat room allowing users to talk about different topics in realtime"
+                                    liveLink="https://topic-room.vercel.app"
+                                    githubLink="https://github.com/AF-Jama/topics-room" 
+                            />
+
+                             <ProjectCard
+                                projectImage={project12} 
+                                header = "Ecommerce application"
+                                 description="Ecommerce application allowing users to create an account and add products to their basket"
+                                 liveLink="https://ecommerce-sable-five.vercel.app"
+                                 githubLink="https://github.com/AF-Jama/ecommerce"
+                            />
+                            
+                            {/* <ProjectCard
                                 projectImage={project02} 
                                 header = "Discord Music Bot"
                                  description="Discord Music Bot, with multiple commands to add,remove and play songs in a queue."
                                  liveLink="#"
                                  githubLink="https://github.com/AF-Jama/news_and_voice_discord_bot" 
-                            />
+                            /> */}
 
-                            <ProjectCard
+                            {/* <ProjectCard
                                 projectImage={virus} 
                                 header = "Covid19 Data Application"
                                  description="Covid 19 web application which displays UK covid data"
                                  liveLink="https://covid-app-chi-wine.vercel.app/"
                                  githubLink="https://github.com/AF-Jama/Covid19TrackerApp"
-                            />
+                            /> */}
 
-                            <ProjectCard
+                            {/* <ProjectCard
                                 projectImage={project03} 
                                 header = "C BlackJack"
                                  description="BlackJack Game written in C."
                                  liveLink="#"
                                  githubLink="https://github.com/AF-Jama/BlackJack"
-                            />
+                            /> */}
 
-                            <ProjectCard
+                            {/* <ProjectCard
                                 projectImage={project04} 
                                 header = "Spotify Stat Tracker"
                                  description="Web Application which exposes Spotify API to display user stats"
                                  liveLink="https://spotify-stats-iota.vercel.app/"
                                  githubLink="https://github.com/AF-Jama/SpotifyApp"
-                            />
+                            /> */}
 
-                            <ProjectCard
+                            {/* <ProjectCard
                                 projectImage={project05} 
                                 header = "Graphical PI estimation"
                                  description="Estimated PI using monte carlo method."
                                  liveLink="#"
                                  githubLink="https://github.com/AF-Jama/monte-carlo"
-                            />
+                            /> */}
 
                             <ProjectCard
                                 projectImage={project06} 
@@ -228,29 +240,29 @@ const Home = (props)=>{
                                 githubLink="https://github.com/AF-Jama/FinancialTracker"
                             />
 
-                            <ProjectCard
+                            {/* <ProjectCard
                                 projectImage={project07} 
                                 header = "Youtube Downloader"
                                  description="Youtube audio and video downloader"
                                  liveLink="http://youtubedownloader01.s3-website-us-east-1.amazonaws.com/"
                                  githubLink="https://github.com/AF-Jama/YoutubeDownloader"
-                            />
+                            /> */}
 
-                            <ProjectCard
+                            {/* <ProjectCard
                                 projectImage={project08} 
                                 header = "Weather Tracker Application"
                                  description="Weather Tracker Application using the Open Weather API."
                                  liveLink="https://weatherapp-six-ruddy.vercel.app/"
                                  githubLink="https://github.com/AF-Jama/WeatherApp"
-                            />
+                            /> */}
 
-                            <ProjectCard
+                            {/* <ProjectCard
                                 projectImage={project09} 
                                 header = "Country Data Application"
                                  description="Country Data application which simply displays country data and allows user to search for a specific country."
                                  liveLink="https://countries-pearl-omega.vercel.app/"
                                  githubLink="https://github.com/AF-Jama/CountryApp"
-                            />
+                            /> */}
 
                             <ProjectCard
                                 projectImage={project10} 
@@ -260,29 +272,21 @@ const Home = (props)=>{
                                  githubLink="https://github.com/AF-Jama/PCAP-Packet-Sniffer"
                             />
 
-                            <ProjectCard
+                            {/* <ProjectCard
                                 projectImage={project11} 
                                 header = "Real time chat application"
                                  description="Real time chat application allowing users to communicate in real/live time."
                                  liveLink="https://chat-room-lilac.vercel.app"
                                  githubLink="https://github.com/AF-Jama/chatroom"
-                            />
+                            /> */}
 
-                            <ProjectCard
-                                projectImage={project12} 
-                                header = "Ecommerce application"
-                                 description="Ecommerce application allowing users to create an account and add products to their basket"
-                                 liveLink="https://ecommerce-sable-five.vercel.app"
-                                 githubLink="https://github.com/AF-Jama/ecommerce"
-                            />
-
-                            <ProjectCard
+                            {/* <ProjectCard
                                 projectImage={project13} 
                                 header = "Uber Clone"
                                  description="Uber Clone allowing users to request a ride"
                                  liveLink="https://uber-clone-virid.vercel.app"
                                  githubLink="https://github.com/AF-Jama/UberClone"
-                            />
+                            /> */}
 
 
                         </div>

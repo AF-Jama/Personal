@@ -11,10 +11,11 @@ const ProjectCard = (props)=>{
 
 
     return (
-        <div className="project-card">
+        <div id="project-card" className="project-card">
             <div className="project-inner-container">
-                <div className="image-container" style={{textAlign:"center"}}>
-                    <img src={props.projectImage} style={{maxWidth:"100%"}} alt="" />
+                <div id="project-image-container" className="image-container" style={{backgroundColor:"blue"}}>
+                    {/* <img src={props.projectImage} alt="" /> */}
+                    {/* <p style={{color:"red"}}>TEST</p> */}
                 </div>
 
                 <h3 className="project-header">{props.header}</h3>
@@ -25,7 +26,7 @@ const ProjectCard = (props)=>{
             </div>
             <a href={props.liveLink} target="_blank" className="one"><img src={openLink} alt="" /></a> 
             <a href={props.githubLink} target="_blank" className="two"><img src={githubLink} alt="" /></a>
-    </div>
+        </div>
     )
 }
 
