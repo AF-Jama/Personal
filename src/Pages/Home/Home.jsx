@@ -224,7 +224,7 @@ const Home = (props)=>{
                                  githubLink="https://github.com/AF-Jama/monte-carlo"
                             /> */}
 
-                            <ProjectCard
+                            {/* <ProjectCard
                                 projectImage={project06} 
                                 header = "Password Manager"
                                  description="Password Manager application allowing users to login/create an account and store encrypted versions of their passwords"
@@ -238,7 +238,7 @@ const Home = (props)=>{
                                 description="Financial tracker application allowing users to login/create an account and manage finances ie: deposting,transfering between accounts and withdrawing"
                                 liveLink="http://financialtracker01.s3-website-us-east-1.amazonaws.com/"
                                 githubLink="https://github.com/AF-Jama/FinancialTracker"
-                            />
+                            /> */}
 
                             {/* <ProjectCard
                                 projectImage={project07} 
